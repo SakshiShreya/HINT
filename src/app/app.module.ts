@@ -7,20 +7,24 @@ import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { UserService } from './user.service';
+import { UserCardComponent } from './dashboard/user-card/user-card.component';
+import { UserMedicinesService } from './user-medicines.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    NavigationComponent
+    NavigationComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [UserService, UserMedicinesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

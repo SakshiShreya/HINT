@@ -1,17 +1,18 @@
 .grid-container {
   display: grid;
   grid-template-areas: 
-  'header'
-  'nav'
-  'main'
+  'header header'
+  'nav main';
+  grid-template-columns: 4em auto;
 }
 
 app-header {
   grid-area: header;
+  z-index: 10;
 }
 .main {
   grid-area: main;
-  height: calc(100vh - 5rem - var(--h1font-size)*1.15);
+  height: calc(100vh - 2rem - var(--h1font-size)*1.15);
   overflow: auto;
 }
 app-navigation {
@@ -24,6 +25,10 @@ app-navigation {
     grid-template-areas: 
     'header'
     'main'
-    'nav'
+    'nav';
+    grid-template-columns: 100%;
+  }
+  .main {
+    height: calc(100vh - 5rem - var(--h1font-size)*1.15);
   }
 }

@@ -1,0 +1,7 @@
+.header-image {
+  background-size: cover;
+}
+
+td:first-child {
+  font-weight: 500;
+}

@@ -9,7 +9,7 @@
   --white: #EEEEEE;
   --black: #333333;
 
-  --margin-l-r: 10%;
+  --margin-l-r: 4rem;
   --h1-ref: 1.728rem;
   --h2-ref: 1.44rem;
   --h3-ref: 1.2rem;
@@ -84,6 +84,10 @@ p {
   font-size: var(--pfont-size);
   padding: 0.5rem 0;
   margin: 0;
+}
+
+.theme {
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
