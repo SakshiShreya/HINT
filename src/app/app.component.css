@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'nav'
+  'main'
+}
+
+app-header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+  height: calc(100vh - 5rem - var(--h1font-size)*1.15);
+  overflow: auto;
+}
+app-navigation {
+  grid-area: nav;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas: 
+    'header'
+    'main'
+    'nav'
+  }
+}
