@@ -21,6 +21,8 @@ app-navigation {
 }
 
 
+
+
 @media (max-width: 768px) {
   .grid-container {
     grid-template-areas: 
