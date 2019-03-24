@@ -17,6 +17,7 @@ app-header {
 }
 app-navigation {
   grid-area: nav;
+  z-index: 9;
 }
 
 
