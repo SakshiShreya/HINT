@@ -11,6 +11,7 @@ import { UserCardComponent } from './dashboard/user-card/user-card.component';
 import { UserMedicinesService } from './user-medicines.service';
 import { FormsModule } from '@angular/forms';
 import { ImageCaptureComponent } from './image-capture/image-capture.component';
+import { PrescriptionCardComponent } from './dashboard/prescription-card/prescription-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ImageCaptureComponent } from './image-capture/image-capture.component';
     DashboardComponent,
     NavigationComponent,
     UserCardComponent,
-    ImageCaptureComponent
+    ImageCaptureComponent,
+    PrescriptionCardComponent
   ],
   imports: [
     BrowserModule,
