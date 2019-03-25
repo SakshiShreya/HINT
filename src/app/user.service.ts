@@ -8,6 +8,6 @@ export class UserService {
   lastname: string = "User";
   age: number = 50;
   image: string = "../../assets/user.png";
-  address: string = "some, address, of, user";
+  address: string = "some, very long, very long, very long, very long, address, of, user";
   constructor() {}
 }

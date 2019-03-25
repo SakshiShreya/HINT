@@ -7,11 +7,16 @@ import { UserService } from 'src/app/user.service';
   styleUrls: ['./user-card.component.css']
 })
 export class UserCardComponent implements OnInit {
-  image;
+  userImage: {};
+  file: File = null;
 
   constructor(private user: UserService) {}
 
   ngOnInit() {
-    this.image = { "background-image": "url("+this.user.image+")" };
+    this.userImage = { "background-image": "url("+this.user.image+")" };
+  }
+
+  onFileChange(event){
+    this.file = event.target.files[0];
   }
 }

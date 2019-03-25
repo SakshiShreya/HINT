@@ -22,7 +22,8 @@ import {
   MatRadioModule,
   MatProgressSpinnerModule,
   MatTabsModule,
-  MatListModule
+  MatListModule,
+  MatRippleModule
 } from "@angular/material";
 
 @NgModule({
@@ -50,7 +51,8 @@ import {
     MatProgressSpinnerModule,
     MatTabsModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatRippleModule
   ],
   exports: [
     MatButtonModule,
@@ -74,7 +76,8 @@ import {
     MatProgressSpinnerModule,
     MatTabsModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatRippleModule
   ]
 })
 export class MaterialModule {}

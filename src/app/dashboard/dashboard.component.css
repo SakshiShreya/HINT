@@ -2,7 +2,7 @@
   padding: 1em var(--margin-l-r);
 }
 
-.container>* {
+.container > * {
   display: block;
   margin-bottom: 1rem;
 }

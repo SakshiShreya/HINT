@@ -8,7 +8,7 @@
   align-items: center;
   box-shadow: 3px 0 1px -2px rgba(0,0,0,.2), 2px 0 2px 0 rgba(0,0,0,.14), 1px 0 5px 0 rgba(0,0,0,.12);
 }
-.container div {
+.container>div {
   font-size: calc(0.6 * var(--pfont-size));
   text-align: center;
   color: var(--white);
@@ -16,6 +16,9 @@
   min-width: 100%;
   height: 3rem;
   padding: 0.5rem 0;
+}
+a {
+  text-decoration: none;
 }
 .container>div:hover{
   background: var(--primary-dk);
@@ -43,21 +46,24 @@
     height: 3rem;
     width: 100%;
   }
-  .container div {
+  .container>div {
     width: 100%;
     text-align: center;
     color: var(--white);
     min-width: 0;
     padding: 0;
-    height: auto;
+    height: 100%;
   }
   .container-hidden {
     height: 3rem;
   }
-  .container div {
-    width: 100%;
-  }
   .material-icons {
     margin-bottom: 0rem;
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
 }

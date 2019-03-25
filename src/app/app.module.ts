@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +9,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { UserService } from './user.service';
 import { UserCardComponent } from './dashboard/user-card/user-card.component';
 import { UserMedicinesService } from './user-medicines.service';
+import { FormsModule } from '@angular/forms';
+import { ImageCaptureComponent } from './image-capture/image-capture.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,14 @@ import { UserMedicinesService } from './user-medicines.service';
     HeaderComponent,
     DashboardComponent,
     NavigationComponent,
-    UserCardComponent
+    UserCardComponent,
+    ImageCaptureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [UserService, UserMedicinesService],
   bootstrap: [AppComponent]
